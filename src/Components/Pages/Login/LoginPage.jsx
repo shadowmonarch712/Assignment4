@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './styles.css'; // Assuming your CSS is in App.css
-import image from '../assets/logo.png'
+import './styles.css'; 
+import image from '../../../assets/logo.png'
 
 function App() {
   const [username, setUsername] = useState('');
@@ -45,7 +45,7 @@ function App() {
           {errorMessage && <div className="error-message">{errorMessage}</div>}
           <input type="submit" value="Login" className="input-field submit-btn" />
         </form>
-        <a className="forget-password" href="#">Forgot your password?</a>
+        <a className="forget-password" href="mailto:support@smartserv.io?subject=Password Reset Request">Forgot your password?</a>
       </div>
     </div>
     </div>

@@ -1,9 +1,13 @@
 import React from 'react'
 import './dashboardStyles.css'
-import data from '../assets/values.json'
+import data from '../../../assets/values.json'
+import BargraphOne from '../../../assets/Bargraph1'
+import BargraphTwo from '../../../assets/Bargraph2'
 const Dashboard = () => {
   return (
     <>
+    <div className='main'>
+
     <p>Company metrics</p>
     <div className="card-holder">
       {data.map((item, index) => (
@@ -15,7 +19,11 @@ const Dashboard = () => {
         </div>
       ))}
     </div>
-    <p>Revenue by job type</p>
+    <div className='bar-handler'>
+    <BargraphOne/>
+    <BargraphTwo/>
+    </div>
+    </div>
   </>
 
   )
